@@ -1,6 +1,9 @@
 # orange
 集成了openresty、lor、orange、mysql(mariadb)、java
 
+镜像公网地址：
+docker pull registry.cn-hangzhou.aliyuncs.com/duqian/orange
+
 ## 准备工作
 
 将准备好的springboot的jar文件放在宿主机的某文件夹下（如：/data/jars），将该文件夹挂载到容器内。
