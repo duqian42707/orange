@@ -1,5 +1,5 @@
 # orange
-集成了openresty、lor、orange、mysql(mariadb)、java
+集成了[openresty][t1]、[lor][t2]、[orange][t3]、mysql(mariadb)、java
 
 镜像公网地址：
 docker pull registry.cn-hangzhou.aliyuncs.com/duqian/orange
@@ -75,3 +75,7 @@ http://localhost:8888/abc/demo/say
 ```
 
 ![](http://ouapqg8mg.bkt.clouddn.com/18-1-20/11898818.jpg)
+
+[t1]: https://openresty.org/cn/
+[t2]: https://github.com/sumory/lor
+[t3]: http://orange.sumory.com/
