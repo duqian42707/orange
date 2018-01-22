@@ -6,7 +6,12 @@ docker pull registry.cn-hangzhou.aliyuncs.com/duqian/orange
 
 ## 准备工作
 
-将准备好的springboot的jar文件放在宿主机的某文件夹下（如：/data/jars），将该文件夹挂载到容器内。
+1. 将准备好的springboot的jar文件放在宿主机的某文件夹下（如：/data/jars），将该文件夹挂载到容器内。
+
+2. 宿主机开放端口：
+    - web服务（需开放给外网，本例为8888）
+    - orange可视化界面（需开放给管理人员，本例为9999）
+    - mysql（可选，本例为3306）
 
 ## 启动容器
 
