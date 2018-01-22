@@ -19,6 +19,7 @@ docker pull registry.cn-hangzhou.aliyuncs.com/duqian/orange
 docker run --name my_orange -d -p 9999:9999 -p 8888:80 -p 3306:3306 \
     -v /data/jars:/root/jars registry.cn-hangzhou.aliyuncs.com/duqian/orange
 ```
+
 ## 进入容器
 
 ```bash
