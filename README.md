@@ -39,7 +39,7 @@ docker exec -it my_orange /bin/bash
 ```bash
 [root@e1d1084145c1 jars]# vi /usr/local/orange/conf/nginx.conf
 ```
-添加或修改一个upstream节点
+添加一个upstream节点
 ```conf
     upstream abc_upstream{
         server localhost:8082;
@@ -69,7 +69,7 @@ docker exec -it my_orange /bin/bash
     
     规则 url match /abc
     
-    处理 http://abc_upstream
+    处理 http://abc_upstream （注意：填写nginx.conf中配置的upstream）
     
     启用
 
