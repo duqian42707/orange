@@ -8,7 +8,8 @@ ADD files/build_table.sh /root/build_table.sh
 ADD files/run.sh /root/run.sh
 
 # 安装mariadb数据库和必须的工具
-RUN yum install -y mariadb mariadb-server openssl-devel pcre-devel gcc gcc-c++ make java
+RUN yum install -y mariadb mariadb-server openssl-devel pcre-devel gcc gcc-c++ make java \
+    && ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 
 # 编译安装openresty
 WORKDIR /root/openresty-1.13.6.1
